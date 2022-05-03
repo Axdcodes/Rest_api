@@ -2,7 +2,7 @@ FROM php:5.6-apache
 
 
 
-RUN apt-get update && apt-get upgrade
+RUN apt-get update && apt-get install -y mysql-client 
 
 COPY ./BLOG  /var/www/html/BLOG
 
